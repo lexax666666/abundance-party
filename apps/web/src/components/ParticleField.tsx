@@ -38,7 +38,7 @@ export default function ParticleField() {
       particles = Array.from({ length: count }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        size: Math.random() * 2.5 + 0.5,
+        size: Math.random() * 4.5 + 1,
         speedY: -(Math.random() * 0.3 + 0.1),
         speedX: (Math.random() - 0.5) * 0.2,
         opacity: Math.random() * 0.7 + 0.1,
