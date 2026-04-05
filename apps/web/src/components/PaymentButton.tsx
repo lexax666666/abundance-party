@@ -3,10 +3,6 @@
 export default function PaymentButton() {
   return (
     <section className="relative z-10 px-4 py-16 text-center sm:py-24">
-      <p className="mb-6 font-[family-name:var(--font-body)] text-lg italic text-gold-warm sm:text-xl">
-        You&apos;re on the guest list &mdash; $50 contribution is optional.
-      </p>
-
       <button
         onClick={() => {
           alert("Stripe payment integration coming soon!");

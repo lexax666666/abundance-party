@@ -2,7 +2,7 @@ const schedule = [
   {
     time: "6:30",
     title: "Doors Open",
-    description: "Wine welcome & curated bites",
+    description: "Welcome Into Abundance — a wine reception and curated bites",
   },
   {
     time: "7:30 — 8:30",
