@@ -5,11 +5,15 @@ const includes = [
   },
   {
     icon: "🍹",
-    label: "Complimentary punch",
+    label: "Compliment punch",
   },
   {
     icon: "✨",
     label: "Affirmation gift",
+  },
+  {
+    icon: "🎨",
+    label: "Artwork and manifestation visuals throughout the space",
   },
 ];
 
@@ -20,7 +24,7 @@ export default function IncludesSection() {
         $50 CONTRIBUTION INCLUDES
       </h2>
 
-      <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-3">
+      <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {includes.map((item, i) => (
           <div
             key={i}

@@ -10,8 +10,8 @@ const schedule = [
     description: "Uplifting Dance & Affirmation music showcase",
   },
   {
-    time: "9:30 — optional",
-    title: "After-party",
+    time: "9:30",
+    title: "Optional After-party",
     description: "At a nearby bar or lounge (TBA)",
   },
 ];
