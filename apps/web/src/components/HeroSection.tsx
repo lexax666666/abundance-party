@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center">
+    <section className="relative z-10 flex flex-col items-center justify-center px-4 text-center">
       {/* Radial gold glow behind hero */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(212,175,55,0.08)_0%,_transparent_60%)]" />
 
