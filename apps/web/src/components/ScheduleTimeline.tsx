@@ -6,11 +6,11 @@ const schedule = [
   },
   {
     time: "7:30 — 8:30",
-    title: "Uplifting music and affirmation",
-    description: "DJ set by Geovani",
+    title: "DJ Set By GeoVoni",
+    description: "Uplifting Dance & Affirmation music showcase",
   },
   {
-    time: "9:30",
+    time: "9:30 — optional",
     title: "After-party",
     description: "At a nearby bar or lounge (TBA)",
   },
@@ -19,10 +19,6 @@ const schedule = [
 export default function ScheduleTimeline() {
   return (
     <section id="schedule" className="relative z-10 px-4 py-16 sm:py-24">
-      <h2 className="mb-16 text-center font-[family-name:var(--font-serif)] text-2xl tracking-[0.3em] text-gold-light sm:text-3xl">
-        THE EVENING
-      </h2>
-
       <div className="mx-auto max-w-2xl">
         <div className="relative border-l border-gold-primary/30 pl-8 sm:pl-12">
           {schedule.map((item, i) => (

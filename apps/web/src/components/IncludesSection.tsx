@@ -16,12 +16,9 @@ const includes = [
 export default function IncludesSection() {
   return (
     <section id="includes" className="relative z-10 px-4 py-16 sm:py-24">
-      <h2 className="mb-4 text-center font-[family-name:var(--font-serif)] text-2xl tracking-[0.3em] text-gold-light sm:text-3xl">
-        YOUR INVITATION INCLUDES
+      <h2 className="mb-12 text-center font-[family-name:var(--font-serif)] text-2xl tracking-[0.3em] text-gold-light sm:text-3xl">
+        $50 CONTRIBUTION INCLUDES
       </h2>
-      <p className="mb-12 text-center font-[family-name:var(--font-body)] text-base font-light italic text-gold-warm sm:text-lg">
-        This is your personal invite
-      </p>
 
       <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-3">
         {includes.map((item, i) => (

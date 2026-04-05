@@ -6,9 +6,12 @@ const contacts = [
 export default function RsvpSection() {
   return (
     <section id="rsvp" className="relative z-10 px-4 py-16 sm:py-24">
-      <h2 className="mb-12 text-center font-[family-name:var(--font-serif)] text-2xl tracking-[0.3em] text-gold-light sm:text-3xl">
-        RSVP
+      <h2 className="mb-4 text-center font-[family-name:var(--font-serif)] text-2xl tracking-[0.3em] text-gold-light sm:text-3xl">
+        CONNECT WITH US
       </h2>
+      <p className="mb-12 text-center font-[family-name:var(--font-body)] text-base font-light text-gold-warm sm:text-lg">
+        For details or info
+      </p>
 
       <div className="mx-auto flex max-w-md flex-col items-center gap-6 sm:flex-row sm:justify-center sm:gap-12">
         {contacts.map((c) => (

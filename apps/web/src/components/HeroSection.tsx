@@ -6,19 +6,25 @@ export default function HeroSection() {
 
       <div className="relative space-y-6">
         <h1
-          className="font-[family-name:var(--font-serif)] text-5xl font-bold tracking-[0.15em] text-gold-light sm:text-6xl md:text-8xl lg:text-9xl"
+          className="font-[family-name:var(--font-serif)] text-4xl font-bold tracking-[0.15em] text-gold-light sm:text-5xl md:text-7xl lg:text-8xl"
           style={{
             textShadow: "0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(212, 175, 55, 0.15)",
           }}
         >
-          ABUNDANCE
-        </h1>
-        <p className="font-[family-name:var(--font-serif)] text-lg tracking-[0.3em] text-gold-primary sm:text-xl md:text-2xl">
           MUSIC &amp; ART PARTY
-        </p>
+        </h1>
+
         <p className="font-[family-name:var(--font-body)] text-xl font-light tracking-wider text-gold-pale sm:text-2xl">
           Thursday, May 14th
         </p>
+
+        <p className="font-[family-name:var(--font-serif)] text-lg tracking-[0.2em] text-gold-light sm:text-xl md:text-2xl">
+          Laurel, MD
+        </p>
+        <p className="font-[family-name:var(--font-body)] text-base font-light text-gold-warm sm:text-lg">
+          13929 Baltimore Ave, Suite 2
+        </p>
+
         <p className="mx-auto max-w-md font-[family-name:var(--font-body)] text-base font-light italic text-gold-warm sm:text-lg md:max-w-lg md:text-xl">
           An elevated night of music,
           <br />
