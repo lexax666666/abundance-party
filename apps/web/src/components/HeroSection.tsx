@@ -1,38 +1,35 @@
 export default function HeroSection() {
   return (
-    <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 text-center">
+    <section className="relative z-10 flex flex-col items-center justify-center px-4 text-center">
       {/* Radial gold glow behind hero */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(212,175,55,0.08)_0%,_transparent_60%)]" />
 
       <div className="relative space-y-6">
-        {/* Main title */}
         <h1
-          className="font-[family-name:var(--font-serif)] text-5xl font-bold tracking-[0.15em] text-gold-light sm:text-6xl md:text-8xl lg:text-9xl"
+          className="font-[family-name:var(--font-serif)] text-4xl font-bold tracking-[0.15em] text-gold-light sm:text-5xl md:text-7xl lg:text-8xl"
           style={{
             textShadow: "0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(212, 175, 55, 0.15)",
           }}
         >
-          ABUNDANCE
+          MUSIC &amp; ART PARTY
         </h1>
 
-        {/* Subtitle */}
-        <p className="font-[family-name:var(--font-serif)] text-lg tracking-[0.3em] text-gold-primary sm:text-xl md:text-2xl">
-          MUSIC &amp; ART PARTY
-        </p>
-
-        {/* Date */}
         <p className="font-[family-name:var(--font-body)] text-xl font-light tracking-wider text-gold-pale sm:text-2xl">
           Thursday, May 14th
         </p>
 
-        {/* Tagline */}
+        <p className="font-[family-name:var(--font-serif)] text-lg tracking-[0.2em] text-gold-light sm:text-xl md:text-2xl">
+          Laurel, MD
+        </p>
+        <p className="font-[family-name:var(--font-body)] text-base font-light text-gold-warm sm:text-lg">
+          13929 Baltimore Ave, Suite 2
+        </p>
+
         <p className="mx-auto max-w-md font-[family-name:var(--font-body)] text-base font-light italic text-gold-warm sm:text-lg md:max-w-lg md:text-xl">
           An elevated night of music,
           <br />
           connection, and positive energy
         </p>
-
-        {/* Script text */}
         <p
           className="mt-4 font-[family-name:var(--font-script)] text-4xl text-gold-light sm:text-5xl md:text-6xl"
           style={{
