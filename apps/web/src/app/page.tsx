@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ParticleField from "@/components/ParticleField";
+import HeroSection from "@/components/HeroSection";
 import GoldenDivider from "@/components/GoldenDivider";
 import ScheduleTimeline from "@/components/ScheduleTimeline";
 import IncludesSection from "@/components/IncludesSection";
@@ -24,6 +25,7 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-cosmic-deep to-transparent" />
       </div>
 
+      <HeroSection />
       <GoldenDivider />
       <ScheduleTimeline />
       <GoldenDivider />

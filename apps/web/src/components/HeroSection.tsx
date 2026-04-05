@@ -4,7 +4,7 @@ export default function HeroSection() {
       {/* Radial gold glow behind hero */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(212,175,55,0.08)_0%,_transparent_60%)]" />
 
-      {/* <div className="relative space-y-6">
+      <div className="relative space-y-6">
         <h1
           className="font-[family-name:var(--font-serif)] text-5xl font-bold tracking-[0.15em] text-gold-light sm:text-6xl md:text-8xl lg:text-9xl"
           style={{
@@ -32,7 +32,7 @@ export default function HeroSection() {
         >
           Realign your energy
         </p>
-      </div> */}
+      </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 animate-float">
