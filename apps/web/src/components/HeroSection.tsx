@@ -6,7 +6,7 @@ export default function HeroSection() {
 
       <div className="relative space-y-6">
         <h1
-          className="font-[family-name:var(--font-serif)] text-lg font-bold tracking-[0.15em] text-gold-light sm:text-5xl md:text-7xl lg:text-8xl"
+          className="font-[family-name:var(--font-serif)] text-lg font-bold tracking-[0.2em] text-gold-light sm:text-xl md:text-2xl"
           style={{
             textShadow: "0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(212, 175, 55, 0.15)",
           }}
