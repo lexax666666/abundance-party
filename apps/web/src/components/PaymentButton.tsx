@@ -1,6 +1,4 @@
-// TODO: Replace this placeholder URL with your real Stripe Payment Link
-// Create one at: https://dashboard.stripe.com/payment-links/create
-const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/test_PLACEHOLDER";
+const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/dRm7sK7oe51s6J46rW7Re00";
 
 export default function PaymentButton() {
   return (
