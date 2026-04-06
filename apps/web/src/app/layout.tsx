@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "ABUNDANCE - Music & Art Party",
   description:
     "An elevated night of music, connection, and positive energy. Thursday, May 14th. Realign your energy.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "ABUNDANCE - Music & Art Party",
     description:

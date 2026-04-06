@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1020"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="40%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#F5DEB3"/>
+    </linearGradient>
+  </defs>
+  <!-- Dark cosmic background -->
+  <rect width="32" height="32" rx="6" fill="url(#bg)"/>
+  <!-- Ambient glow -->
+  <circle cx="16" cy="18" r="12" fill="url(#glow)"/>
+  <!-- Stylized flame with music note -->
+  <path d="M16 4c0 0-7 8-7 14a7 7 0 0 0 14 0C23 12 16 4 16 4z" fill="url(#flame)" opacity="0.9"/>
+  <path d="M16 4c0 0-3.5 6-3.5 11a3.5 3.5 0 0 0 7 0C19.5 10 16 4 16 4z" fill="#0a0a0f" opacity="0.4"/>
+  <!-- Music note inside flame -->
+  <circle cx="14.5" cy="21" r="2" fill="#0a0a0f" opacity="0.6"/>
+  <rect x="16" y="12" width="1.2" height="9.5" rx="0.6" fill="#0a0a0f" opacity="0.6"/>
+  <path d="M17.2 12c0 0 2.5 0.5 2.5 3s-2.5 1-2.5 1z" fill="#0a0a0f" opacity="0.6"/>
+</svg>
