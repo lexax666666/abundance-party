@@ -5,7 +5,7 @@ const includes = [
   },
   {
     icon: "🍹",
-    label: "Compliment punch",
+    label: "Complimentary Spritz",
   },
   {
     icon: "✨",
