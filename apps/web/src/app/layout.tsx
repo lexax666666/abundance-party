@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   description:
     "An elevated night of music, connection, and positive energy. Thursday, May 14th. Realign your energy.",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "ABUNDANCE - Music & Art Party",
