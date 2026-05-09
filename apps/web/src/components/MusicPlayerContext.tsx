@@ -112,24 +112,8 @@ export function MusicPlayerProvider({ children }: { children: ReactNode }) {
     audio.addEventListener("ended", handleEnded);
     audio.addEventListener("error", handleError);
 
-    // Autoplay first track on page load
+    // Load first track without playing — user clicks to start
     audio.src = TRACKS[0].src;
-    audio.play().then(() => {
-      isPlayingRef.current = true;
-      setIsPlaying(true);
-    }).catch(() => {
-      // Browser blocked autoplay — wait for first user interaction
-      const resumeOnInteraction = () => {
-        audio.play().then(() => {
-          isPlayingRef.current = true;
-          setIsPlaying(true);
-        }).catch(() => {});
-        document.removeEventListener("click", resumeOnInteraction);
-        document.removeEventListener("touchstart", resumeOnInteraction);
-      };
-      document.addEventListener("click", resumeOnInteraction, { once: true });
-      document.addEventListener("touchstart", resumeOnInteraction, { once: true });
-    });
 
     return () => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
