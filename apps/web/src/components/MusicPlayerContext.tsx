@@ -44,9 +44,19 @@ const TRACKS: Track[] = [
     src: "/music/im-so-happy.mp3",
   },
   {
+    title: "Money Loves Me",
+    artist: "ManifestMusic.Studio",
+    src: "/music/money-loves-me.mp3",
+  },
+  {
     title: "Chakra Abundance",
-    artist: "Manifestica Music Studio",
+    artist: "ManifestMusic.Studio",
     src: "/music/chakra-abundance.mp3",
+  },
+  {
+    title: "Grateful",
+    artist: "Affirmation Club",
+    src: "/music/grateful.mp3",
   },
 ];
 
@@ -101,6 +111,9 @@ export function MusicPlayerProvider({ children }: { children: ReactNode }) {
     audio.addEventListener("durationchange", handleDurationChange);
     audio.addEventListener("ended", handleEnded);
     audio.addEventListener("error", handleError);
+
+    // Load first track without playing — user clicks to start
+    audio.src = TRACKS[0].src;
 
     return () => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
