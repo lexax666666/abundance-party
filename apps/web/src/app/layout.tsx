@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { playfair, greatVibes, cormorant } from "@/lib/fonts";
+import { MusicPlayerProvider } from "@/components/MusicPlayerContext";
+import GlobalPlayer from "@/components/GlobalPlayer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -31,9 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${playfair.variable} ${greatVibes.variable} ${cormorant.variable} antialiased min-h-screen`}
+        className={`${playfair.variable} ${greatVibes.variable} ${cormorant.variable} antialiased min-h-screen pb-20`}
       >
-        {children}
+        <MusicPlayerProvider>
+          {children}
+          <GlobalPlayer />
+        </MusicPlayerProvider>
       </body>
     </html>
   );
