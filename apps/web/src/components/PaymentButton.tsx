@@ -9,11 +9,11 @@ export default function PaymentButton() {
         rel="noopener noreferrer"
         className="group relative inline-block rounded-full bg-gradient-to-r from-gold-warm via-gold-light to-gold-warm px-10 py-4 font-[family-name:var(--font-serif)] text-lg font-semibold tracking-wider text-cosmic-deep transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(255,215,0,0.4)] sm:text-xl animate-pulse-glow"
       >
-        Contribute $50
+        Put Yourself on the Guest List
       </a>
 
       <p className="mt-4 font-[family-name:var(--font-body)] text-sm text-gold-warm/60">
-        Secure payment via Stripe
+        Use promo code <span className="font-semibold text-gold-warm">ABUNDANCE</span> at checkout to get in for free
       </p>
     </section>
   );
