@@ -1,8 +1,8 @@
 const schedule = [
   {
-    time: "6:30",
-    title: "Doors Open",
-    description: "Welcome Into Abundance — a wine reception and curated bites",
+    time: "6:30 — 7:30",
+    title: "Welcome Into Abundance",
+    description: "Wine reception and curated bites",
   },
   {
     time: "7:30 — 8:30",
@@ -10,9 +10,9 @@ const schedule = [
     description: "Uplifting Dance & Affirmation music showcase",
   },
   {
-    time: "9:30",
-    title: "Optional After-party",
-    description: "At a nearby bar or lounge (TBA)",
+    time: "9:00",
+    title: "Doors Close",
+    description: "Doors stay open until 9pm",
   },
 ];
 
