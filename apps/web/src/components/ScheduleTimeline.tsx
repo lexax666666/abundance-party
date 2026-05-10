@@ -10,9 +10,9 @@ const schedule = [
     description: "Uplifting Dance & Affirmation music showcase",
   },
   {
-    time: "9:00",
-    title: "Doors Close",
-    description: "Doors stay open until 9pm",
+    time: "8:30 — 9:00",
+    title: "Open Bar",
+    description: "Punch, cocktails, and wine — doors close at 9:00",
   },
 ];
 
