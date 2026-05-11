@@ -11,8 +11,8 @@ const schedule = [
   },
   {
     time: "8:30 — 9:30",
-    title: "Open Bar",
-    description: "Doors stay open until 9:30",
+    title: "Doors stay open until 9:30",
+    description: "",
   },
 ];
 
@@ -37,9 +37,11 @@ export default function ScheduleTimeline() {
               </p>
 
               {/* Description */}
-              <p className="mt-1 font-[family-name:var(--font-body)] text-base font-light text-gold-warm/80">
-                {item.description}
-              </p>
+              {item.description && (
+                <p className="mt-1 font-[family-name:var(--font-body)] text-base font-light text-gold-warm/80">
+                  {item.description}
+                </p>
+              )}
             </div>
           ))}
         </div>
