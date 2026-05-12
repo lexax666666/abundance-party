@@ -5,9 +5,9 @@ import GlobalPlayer from "@/components/GlobalPlayer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ABUNDANCE - Music & Art Party",
+  title: "ABUNDANCE - Music & Art Party | New Date TBD",
   description:
-    "An elevated night of music, connection, and positive energy. Thursday, May 14th. Realign your energy.",
+    "An elevated night of music, connection, and positive energy. New date coming soon. Realign your energy.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "ABUNDANCE - Music & Art Party",
+    title: "ABUNDANCE - Music & Art Party | New Date TBD",
     description:
-      "An elevated night of music, connection, and positive energy. Thursday, May 14th.",
+      "An elevated night of music, connection, and positive energy. New date coming soon.",
     type: "website",
   },
 };
