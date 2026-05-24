@@ -14,23 +14,15 @@ export default function HeroSection() {
           MUSIC &amp; ART PARTY
         </h1>
 
-        {/* Postponed announcement */}
+        {/* Event date */}
         <div className="mx-auto max-w-sm space-y-3">
           <div className="flex items-center justify-center gap-4">
             <span className="h-px w-8 bg-gradient-to-r from-transparent to-gold-primary/50" />
-            <p
-              className="font-[family-name:var(--font-serif)] text-sm font-semibold tracking-[0.35em] text-gold-primary"
-              style={{
-                textShadow: "0 0 20px rgba(212, 175, 55, 0.4)",
-              }}
-            >
-              POSTPONED
+            <p className="font-[family-name:var(--font-body)] text-lg font-light tracking-wider text-gold-pale/80 sm:text-xl">
+              Thursday, July 23
             </p>
             <span className="h-px w-8 bg-gradient-to-l from-transparent to-gold-primary/50" />
           </div>
-          <p className="font-[family-name:var(--font-body)] text-lg font-light tracking-wider text-gold-pale/80 sm:text-xl">
-            Thursday, July 23
-          </p>
         </div>
 
         <p className="font-[family-name:var(--font-serif)] text-lg tracking-[0.2em] text-gold-light sm:text-xl md:text-2xl">
