@@ -29,7 +29,7 @@ export default function HeroSection() {
             <span className="h-px w-8 bg-gradient-to-l from-transparent to-gold-primary/50" />
           </div>
           <p className="font-[family-name:var(--font-body)] text-lg font-light tracking-wider text-gold-pale/80 sm:text-xl">
-            New Date Coming Soon
+            Thursday, July 23
           </p>
         </div>
 
