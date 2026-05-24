@@ -5,7 +5,7 @@ const includes = [
   },
   {
     icon: "🍹",
-    label: "Complimentary Spritz",
+    label: "Featuring a Full Bar with Curated Cocktails & Spritzes",
   },
   {
     icon: "✨",

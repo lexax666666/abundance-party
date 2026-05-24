@@ -37,7 +37,7 @@ export default function HeroSection() {
           Laurel, MD
         </p>
         <p className="font-[family-name:var(--font-body)] text-base font-light text-gold-warm sm:text-lg">
-          Baltimore Ave
+          Private venue address provided upon ticket confirmation
         </p>
 
         <p className="mx-auto max-w-md font-[family-name:var(--font-body)] text-base font-light italic text-gold-warm sm:text-lg md:max-w-lg md:text-xl">
