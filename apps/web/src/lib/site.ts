@@ -9,7 +9,7 @@
  *   structured data all depend on it — Google needs a real, absolute URL to
  *   index the page and attach the event rich result.
  */
-export const SITE_URL = "https://abundance.party";
+export const SITE_URL = "https://abundancesoundart.com";
 
 export const SITE_NAME = "Shift to Abundance";
 
