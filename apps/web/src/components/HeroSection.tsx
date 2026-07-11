@@ -1,3 +1,5 @@
+import { VENUE } from "@/lib/site";
+
 export default function HeroSection() {
   return (
     <section className="relative z-10 flex flex-col items-center justify-center px-4 text-center">
@@ -5,13 +7,23 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(212,175,55,0.08)_0%,_transparent_60%)]" />
 
       <div className="relative space-y-6">
-        <h1
+        <p
           className="font-[family-name:var(--font-serif)] text-lg font-bold tracking-[0.2em] text-gold-light sm:text-xl md:text-2xl"
           style={{
             textShadow: "0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(212, 175, 55, 0.15)",
           }}
         >
           MUSIC &amp; ART PARTY
+        </p>
+
+        {/* Primary SEO headline */}
+        <h1
+          className="font-[family-name:var(--font-script)] text-4xl text-gold-light sm:text-5xl md:text-6xl"
+          style={{
+            textShadow: "0 0 30px rgba(255, 215, 0, 0.25)",
+          }}
+        >
+          Shift to Abundance
         </h1>
 
         {/* Event date */}
@@ -26,10 +38,11 @@ export default function HeroSection() {
         </div>
 
         <p className="font-[family-name:var(--font-serif)] text-lg tracking-[0.2em] text-gold-light sm:text-xl md:text-2xl">
-          Laurel, MD
+          {VENUE.publicLabel}
         </p>
         <p className="font-[family-name:var(--font-body)] text-base font-light text-gold-warm sm:text-lg">
-          Private venue address provided upon ticket confirmation
+          In the DC / Baltimore area &middot; private venue address provided upon
+          ticket confirmation
         </p>
 
         <p className="mx-auto max-w-md font-[family-name:var(--font-body)] text-base font-light italic text-gold-warm sm:text-lg md:max-w-lg md:text-xl">
