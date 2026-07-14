@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { playfair, greatVibes, cormorant } from "@/lib/fonts";
 import { MusicPlayerProvider } from "@/components/MusicPlayerContext";
 import GlobalPlayer from "@/components/GlobalPlayer";
-import { SITE_URL, SITE_NAME, EVENT, VENUE } from "@/lib/site";
+import { SITE_URL, SITE_NAME, EVENT, VENUE, TICKETS_URL } from "@/lib/site";
 import "./globals.css";
 
 const title = "Shift to Abundance | Music & Art Party — Laurel, MD (DC / Baltimore) · July 23";
@@ -112,7 +112,7 @@ const eventJsonLd = {
   },
   offers: {
     "@type": "Offer",
-    url: SITE_URL,
+    url: TICKETS_URL,
     availability: "https://schema.org/InStock",
     validFrom: "2026-06-01T00:00:00-04:00",
   },

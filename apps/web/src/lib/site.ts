@@ -13,6 +13,10 @@ export const SITE_URL = "https://abundancesoundart.com";
 
 export const SITE_NAME = "Shift to Abundance";
 
+/** Eventbrite ticket page — where all "get tickets" actions point. */
+export const TICKETS_URL =
+  "https://www.eventbrite.com/e/abundance-music-art-party-tickets-1991413589654";
+
 /**
  * Full street address.
  *
