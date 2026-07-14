@@ -13,7 +13,7 @@ export default function PaymentButton() {
       </a>
 
       <p className="mt-4 font-[family-name:var(--font-body)] text-sm text-gold-warm/60">
-        Check out and get tickets on Eventbrite (free options available)
+        Get tickets on Eventbrite
       </p>
     </section>
   );
