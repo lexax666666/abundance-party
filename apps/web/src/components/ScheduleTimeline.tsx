@@ -1,18 +1,18 @@
 const schedule = [
   {
     time: "6:30 — 7:30",
-    title: "Welcome Into Abundance",
-    description: "Wine reception and curated bites",
+    title: "Arrivals & Mingling",
+    description: "Open bar, punch & light bites",
   },
   {
     time: "7:30 — 8:30",
-    title: "DJ Set By GeoVoni",
-    description: "Uplifting Dance & Affirmation music showcase",
+    title: "DJ Set by Geovoni",
+    description: "Good music, good vibes on the floor",
   },
   {
     time: "8:30 — 9:30",
-    title: "Doors stay open until 9:30",
-    description: "",
+    title: "Keep the Connections Going",
+    description: "Doors stay open until 9:30",
   },
 ];
 
