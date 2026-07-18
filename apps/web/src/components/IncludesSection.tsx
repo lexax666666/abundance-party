@@ -1,19 +1,18 @@
 const includes = [
   {
-    icon: "🍷",
-    label: "Wine reception & curated small bites",
+    icon: "🎵",
+    label: "DJ Geovoni",
+    sub: "Good music, good vibes",
   },
   {
-    icon: "🍹",
-    label: "Featuring a Full Bar with Curated Cocktails & Spritzes",
+    icon: "🍸",
+    label: "Open Bar",
+    sub: "Punch & light bites",
   },
   {
-    icon: "✨",
-    label: "Affirmation gift",
-  },
-  {
-    icon: "🎨",
-    label: "Artwork and manifestation visuals throughout the space",
+    icon: "🤝",
+    label: "Build New Connections",
+    sub: "Come as you are, leave inspired",
   },
 ];
 
@@ -21,10 +20,10 @@ export default function IncludesSection() {
   return (
     <section id="includes" className="relative z-10 px-4 py-16 sm:py-24">
       <h2 className="mb-12 text-center font-[family-name:var(--font-serif)] text-2xl tracking-[0.3em] text-gold-light sm:text-3xl">
-        INCLUDES
+        THE VIBE
       </h2>
 
-      <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-3">
         {includes.map((item, i) => (
           <div
             key={i}
@@ -33,8 +32,11 @@ export default function IncludesSection() {
             <span className="mb-3 block text-3xl" role="img" aria-hidden="true">
               {item.icon}
             </span>
-            <p className="font-[family-name:var(--font-body)] text-base text-gold-pale sm:text-lg">
+            <p className="font-[family-name:var(--font-body)] text-base font-semibold text-gold-pale sm:text-lg">
               {item.label}
+            </p>
+            <p className="mt-1 font-[family-name:var(--font-body)] text-sm font-light text-gold-warm/80">
+              {item.sub}
             </p>
           </div>
         ))}

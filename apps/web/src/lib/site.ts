@@ -36,14 +36,17 @@ export const VENUE = {
 } as const;
 
 export const EVENT = {
-  name: "Shift to Abundance — Music & Art Party",
+  name: "Shift to Abundance — Networking & Social",
   /** July 23, 2026, 6:30pm ET (EDT, UTC−4). */
   startDate: "2026-07-23T18:30:00-04:00",
   endDate: "2026-07-23T21:30:00-04:00",
-  performer: "GeoVoni",
+  performer: "Geovoni",
+  /** Admission price in USD. */
+  price: "15",
+  priceCurrency: "USD",
   description:
-    "Shift to Abundance is an elevated night of music, art, and positive " +
-    "energy in the DC / Baltimore area — Laurel, MD. Wine reception, a full " +
-    "bar of curated cocktails, a DJ set by GeoVoni, manifestation visuals, " +
-    "and an affirmation gift. Realign your energy.",
+    "Shift to Abundance is a networking & social evening in the DC / Baltimore " +
+    "area — Laurel, MD. Come as you are, leave inspired. Open bar with punch " +
+    "and light bites, a DJ set by Geovoni, and a room full of new connections. " +
+    "$15 admission.",
 } as const;

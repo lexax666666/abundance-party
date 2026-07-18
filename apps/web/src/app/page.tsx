@@ -13,17 +13,17 @@ export default function Home() {
     <main className="relative overflow-hidden">
       <ParticleField />
 
-      {/* Hero banner image */}
-      <div className="relative z-10 w-full">
+      {/* Hero flyer image */}
+      <div className="relative z-10 mx-auto w-full max-w-lg px-4 pt-8">
         <Image
-          src="/hero-banner.png"
-          alt="Abundance Sound & Art Experience — Realign your energy"
-          width={1500}
-          height={844}
+          src="/event-flyer.png"
+          alt="Abundance Networking & Social — Come as You Are, Leave Inspired · Thursday July 23, 6:30–9:30 PM, Laurel MD · DJ Geovoni · Open bar · $15 admission · Tickets on Eventbrite"
+          width={1320}
+          height={2868}
           priority
-          className="h-auto w-full object-cover"
+          className="h-auto w-full rounded-2xl border border-gold-primary/20 shadow-[0_0_60px_rgba(212,175,55,0.15)]"
         />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-cosmic-deep to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-cosmic-deep to-transparent" />
       </div>
 
       <HeroSection />
@@ -40,7 +40,7 @@ export default function Home() {
 
       <footer className="relative z-10 border-t border-gold-primary/10 py-8 text-center">
         <p className="font-[family-name:var(--font-body)] text-sm text-gold-warm/40">
-          ABUNDANCE &mdash; Music &amp; Art Party
+          ABUNDANCE &mdash; Networking &amp; Social
         </p>
       </footer>
     </main>

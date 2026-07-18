@@ -13,7 +13,7 @@ export default function HeroSection() {
             textShadow: "0 0 40px rgba(255, 215, 0, 0.3), 0 0 80px rgba(212, 175, 55, 0.15)",
           }}
         >
-          MUSIC &amp; ART PARTY
+          NETWORKING &amp; SOCIAL
         </p>
 
         {/* Primary SEO headline */}
@@ -45,10 +45,13 @@ export default function HeroSection() {
           ticket confirmation
         </p>
 
+        {/* Admission */}
+        <p className="inline-block rounded-full border border-gold-primary/40 px-6 py-2 font-[family-name:var(--font-serif)] text-lg font-semibold tracking-wider text-gold-light sm:text-xl">
+          $15 Admission
+        </p>
+
         <p className="mx-auto max-w-md font-[family-name:var(--font-body)] text-base font-light italic text-gold-warm sm:text-lg md:max-w-lg md:text-xl">
-          An elevated night of music,
-          <br />
-          connection, and positive energy
+          Good music, open bar, and a room full of new connections
         </p>
         <p
           className="mt-4 font-[family-name:var(--font-script)] text-4xl text-gold-light sm:text-5xl md:text-6xl"
@@ -56,7 +59,7 @@ export default function HeroSection() {
             textShadow: "0 0 30px rgba(255, 215, 0, 0.25)",
           }}
         >
-          Realign your energy
+          Come as You Are. Leave Inspired.
         </p>
       </div>
 
