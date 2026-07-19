@@ -1,9 +1,0 @@
-{
-  "name": "@abundance-party/scripts",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "dependencies": {
-    "node-shazam": "latest"
-  }
-}

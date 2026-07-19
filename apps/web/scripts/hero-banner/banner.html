@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Abundance — Networking &amp; Social hero banner (1600×900)</title>
+<!--
+  Source for public/hero-banner.png. Regenerate with:
+
+    cd apps/web && npx playwright screenshot \
+      --viewport-size "1600,900" --wait-for-timeout 3000 \
+      "file://$PWD/scripts/hero-banner/banner.html" public/hero-banner.png
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@400;600&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1600px; height: 900px; overflow: hidden; }
+  body {
+    position: relative;
+    background: #FAF6EC;
+    color: #1C1917;
+    font-family: "Cormorant Garamond", serif;
+  }
+  .corner { position: absolute; color: #C5963A; }
+  .stack {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .eyebrow {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.42em;
+    text-indent: 0.42em;
+  }
+  h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 190px;
+    line-height: 0.9;
+    background: linear-gradient(160deg, #D4AF37 10%, #C5963A 45%, #8C6B1F 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 0 40px 30px;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    font-size: 30px;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+  }
+  .details .item { display: flex; align-items: center; gap: 14px; }
+  .details svg { width: 34px; height: 34px; stroke: #C5963A; fill: none; stroke-width: 1.5; }
+  .details .sep { width: 1px; height: 40px; background: #C5963A; opacity: 0.6; }
+  .sounds-by {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+    color: #8C6B1F;
+  }
+  .dj {
+    font-family: "Great Vibes", cursive;
+    font-size: 84px;
+    line-height: 1;
+    padding-bottom: 12px;
+  }
+  .dj .dj-prefix { font-family: "Playfair Display", serif; font-weight: 700; font-size: 64px; }
+  .genres { font-size: 27px; letter-spacing: 0.25em; text-indent: 0.25em; color: #5C5347; }
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-top: 10px;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #5C5347;
+  }
+  .admission {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    border: 2px solid #C5963A;
+    border-radius: 18px;
+    padding: 10px 28px;
+    color: #1C1917;
+  }
+  .admission .price { font-family: "Playfair Display", serif; font-weight: 700; font-size: 40px; }
+  .admission .word { font-family: "Playfair Display", serif; font-size: 20px; letter-spacing: 0.3em; }
+  .dot { color: #C5963A; font-size: 28px; }
+</style>
+</head>
+<body>
+  <!-- Corner palm fronds: rib with filled leaflet petals fanning off each side -->
+  <svg class="corner" style="top:-24px; left:-24px; width:340px; height:340px; opacity:.5"
+       viewBox="0 0 100 100" fill="currentColor">
+    <g transform="translate(4,4) rotate(45)">
+      <rect x="0" y="-0.6" width="92" height="1.2" rx="0.6" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(12,0) rotate(-38)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(12,0) rotate(38)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(28,0) rotate(-36) scale(0.95)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(28,0) rotate(36) scale(0.95)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(44,0) rotate(-34) scale(0.85)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(44,0) rotate(34) scale(0.85)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(59,0) rotate(-32) scale(0.7)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(59,0) rotate(32) scale(0.7)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(72,0) rotate(-30) scale(0.55)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(72,0) rotate(30) scale(0.55)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(83,0) rotate(-26) scale(0.4)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(83,0) rotate(26) scale(0.4)" />
+    </g>
+  </svg>
+  <svg class="corner" style="bottom:-36px; right:-36px; width:290px; height:290px; opacity:.5; transform:rotate(180deg)"
+       viewBox="0 0 100 100" fill="currentColor">
+    <g transform="translate(4,4) rotate(45)">
+      <rect x="0" y="-0.6" width="92" height="1.2" rx="0.6" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(12,0) rotate(-38)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(12,0) rotate(38)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(28,0) rotate(-36) scale(0.95)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(28,0) rotate(36) scale(0.95)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(44,0) rotate(-34) scale(0.85)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(44,0) rotate(34) scale(0.85)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(59,0) rotate(-32) scale(0.7)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(59,0) rotate(32) scale(0.7)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(72,0) rotate(-30) scale(0.55)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(72,0) rotate(30) scale(0.55)" />
+      <path d="M0 0 Q 13 -7 27 -4 Q 13 2 0 0 Z" transform="translate(83,0) rotate(-26) scale(0.4)" />
+      <path d="M0 0 Q 13 7 27 4 Q 13 -2 0 0 Z" transform="translate(83,0) rotate(26) scale(0.4)" />
+    </g>
+  </svg>
+  <!-- Gold brush sweep accents -->
+  <svg class="corner" style="top:40px; right:40px; width:300px; height:220px; opacity:.45"
+       viewBox="0 0 120 90" stroke="currentColor" fill="none" stroke-linecap="round">
+    <path d="M8 82 C 40 62, 82 40, 116 6" stroke-width="7" opacity=".35" />
+    <path d="M16 86 C 48 66, 88 44, 118 14" stroke-width="3.5" opacity=".55" />
+    <path d="M28 88 C 58 70, 94 50, 119 26" stroke-width="1.5" opacity=".8" />
+  </svg>
+  <svg class="corner" style="bottom:40px; left:40px; width:300px; height:220px; opacity:.45; transform:rotate(180deg)"
+       viewBox="0 0 120 90" stroke="currentColor" fill="none" stroke-linecap="round">
+    <path d="M8 82 C 40 62, 82 40, 116 6" stroke-width="7" opacity=".35" />
+    <path d="M16 86 C 48 66, 88 44, 118 14" stroke-width="3.5" opacity=".55" />
+    <path d="M28 88 C 58 70, 94 50, 119 26" stroke-width="1.5" opacity=".8" />
+  </svg>
+
+  <div class="stack">
+    <h1>Abundance</h1>
+    <div class="eyebrow">NETWORKING &amp; SOCIAL</div>
+
+    <div class="details">
+      <span class="item">
+        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+          d="M6.75 3v2.25M17.25 3v2.25M3.75 8.25h16.5M4.5 5.25h15a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75h-15a.75.75 0 01-.75-.75V6a.75.75 0 01.75-.75z"/></svg>
+        THURSDAY, JULY 23
+      </span>
+      <span class="sep"></span>
+      <span class="item">
+        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 6v6l3.5 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        6:30 &ndash; 9:30 PM
+      </span>
+      <span class="sep"></span>
+      <span class="item">
+        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+          d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 5.25-7.5 10.5-7.5 10.5s-7.5-5.25-7.5-10.5a7.5 7.5 0 1115 0z"/></svg>
+        LAUREL, MD
+      </span>
+    </div>
+
+    <div>
+      <div class="sounds-by">&mdash; SOUNDS BY &mdash;</div>
+      <div class="dj"><span class="dj-prefix">DJ</span> Geovoni</div>
+      <div class="genres">R&amp;B &bull; SOCA &amp; FEEL-GOOD FAVORITES</div>
+    </div>
+
+    <div class="bottom">
+      <span class="admission"><span class="price">$15</span><span class="word">ADMISSION</span></span>
+      <span>TICKETS ON EVENTBRITE</span>
+      <span class="dot">&bull;</span>
+      <span>443-577-8643</span>
+      <span class="dot">&bull;</span>
+      <span>ABUNDANCESOUNDART.COM</span>
+    </div>
+  </div>
+</body>
+</html>
