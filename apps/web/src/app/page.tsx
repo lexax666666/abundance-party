@@ -6,7 +6,6 @@ import ScheduleTimeline from "@/components/ScheduleTimeline";
 import IncludesSection from "@/components/IncludesSection";
 import RsvpSection from "@/components/RsvpSection";
 import PaymentButton from "@/components/PaymentButton";
-import MusicPlaylist from "@/components/MusicPlaylist";
 
 export default function Home() {
   return (
@@ -27,8 +26,6 @@ export default function Home() {
       </div>
 
       <HeroSection />
-      <GoldenDivider />
-      <MusicPlaylist />
       <GoldenDivider />
       <ScheduleTimeline />
       <GoldenDivider />

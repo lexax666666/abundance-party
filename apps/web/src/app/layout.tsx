@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { playfair, greatVibes, cormorant } from "@/lib/fonts";
-import { MusicPlayerProvider } from "@/components/MusicPlayerContext";
-import GlobalPlayer from "@/components/GlobalPlayer";
 import { SITE_URL, SITE_NAME, EVENT, VENUE, TICKETS_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -126,16 +124,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${playfair.variable} ${greatVibes.variable} ${cormorant.variable} antialiased min-h-screen pb-20`}
+        className={`${playfair.variable} ${greatVibes.variable} ${cormorant.variable} antialiased min-h-screen`}
       >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }}
         />
-        <MusicPlayerProvider>
-          {children}
-          <GlobalPlayer />
-        </MusicPlayerProvider>
+        {children}
       </body>
     </html>
   );
