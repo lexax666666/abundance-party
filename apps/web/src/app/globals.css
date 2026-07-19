@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cosmic-deep: #0a0a0f;
-  --color-cosmic-surface: #111118;
-  --color-gold-primary: #D4AF37;
-  --color-gold-light: #FFD700;
-  --color-gold-warm: #C5963A;
-  --color-gold-pale: #F5E6B8;
-  --color-gold-glow: rgba(212, 175, 55, 0.3);
-  --color-gold-faint: rgba(212, 175, 55, 0.08);
+  --color-cream-base: #FAF6EC;
+  --color-cream-card: #FFFDF6;
+  --color-ink: #1C1917;
+  --color-ink-soft: #5C5347;
+  --color-gold-primary: #C5963A;
+  --color-gold-light: #D4AF37;
+  --color-gold-deep: #8C6B1F;
+  --color-gold-pale: #EFE0BC;
+  --color-gold-glow: rgba(197, 150, 58, 0.25);
+  --color-gold-faint: rgba(197, 150, 58, 0.08);
 
   --font-serif: var(--font-serif);
   --font-script: var(--font-script);
@@ -17,7 +19,6 @@
   --animate-sparkle: sparkle 3s ease-in-out infinite;
   --animate-shimmer: shimmer 4s ease-in-out infinite;
   --animate-float: float 6s ease-in-out infinite;
-  --animate-pulse-glow: pulse-glow 3s ease-in-out infinite;
   --animate-fade-in: fade-in 1s ease-out forwards;
   --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
 }
@@ -37,11 +38,6 @@
   50% { transform: translateY(-12px); }
 }
 
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); }
-  50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.5), 0 0 80px rgba(212, 175, 55, 0.2); }
-}
-
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -57,8 +53,8 @@ html {
 }
 
 body {
-  background-color: #0a0a0f;
-  color: #F5E6B8;
+  background-color: #FAF6EC;
+  color: #1C1917;
 }
 
 @media (prefers-reduced-motion: reduce) {

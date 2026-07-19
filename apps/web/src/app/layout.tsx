@@ -1,29 +1,29 @@
 import type { Metadata } from "next";
 import { playfair, greatVibes, cormorant } from "@/lib/fonts";
-import { SITE_URL, SITE_NAME, EVENT, VENUE, TICKETS_URL } from "@/lib/site";
+import { SITE_URL, SITE_NAME, EVENT, VENUE, TICKETS_URL, PRICE } from "@/lib/site";
 import "./globals.css";
 
-const title = "Shift to Abundance | Music & Art Party — Laurel, MD (DC / Baltimore) · July 23";
+const title = "Abundance | Networking & Social — Laurel, MD (DC / Baltimore) · July 23";
 const description =
-  "Shift to Abundance — an elevated night of music, art, and positive energy in the DC / Baltimore area (Laurel, MD) on Thursday, July 23. Wine reception, full bar, DJ set by GeoVoni. Realign your energy.";
+  "Abundance — a networking and social event in the DC / Baltimore area (Laurel, MD) on Thursday, July 23, 6:30–9:30 PM. Open bar, light bites, sounds by DJ Geovoni — R&B, Soca & feel-good favorites. $15 admission.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title,
   description,
   keywords: [
-    "Shift to Abundance",
-    "Abundance party",
-    "music and art party",
-    "DC events",
-    "Baltimore events",
+    "Abundance networking event",
+    "Abundance social",
+    "networking event Laurel MD",
+    "DC networking events",
+    "Baltimore networking events",
     "Laurel MD events",
-    "Maryland music party",
-    "wellness event DC",
-    "manifestation event",
-    "GeoVoni",
-    "affirmation party",
+    "DJ Geovoni",
+    "R&B Soca party Maryland",
+    "social mixer DC",
+    "open bar event Maryland",
     "DJ set Baltimore",
+    "Shift to Abundance",
   ],
   alternates: {
     canonical: "/",
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/hero-banner.png",
-        width: 1500,
-        height: 844,
-        alt: "Shift to Abundance — Music & Art Party in the DC / Baltimore area",
+        width: 1600,
+        height: 900,
+        alt: "Abundance — Networking & Social in Laurel, MD",
       },
     ],
   },
@@ -72,13 +72,13 @@ export const metadata: Metadata = {
 };
 
 /**
- * Event structured data (schema.org MusicEvent) for Google rich results.
+ * Event structured data (schema.org Event) for Google rich results.
  * The full street address lives here only — it is not rendered in the
  * visible UI — so search engines can place the event geographically.
  */
 const eventJsonLd = {
   "@context": "https://schema.org",
-  "@type": "MusicEvent",
+  "@type": "Event",
   name: EVENT.name,
   description: EVENT.description,
   startDate: EVENT.startDate,
@@ -111,6 +111,8 @@ const eventJsonLd = {
   offers: {
     "@type": "Offer",
     url: TICKETS_URL,
+    price: PRICE.amount,
+    priceCurrency: PRICE.currency,
     availability: "https://schema.org/InStock",
     validFrom: "2026-06-01T00:00:00-04:00",
   },
@@ -122,7 +124,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
         className={`${playfair.variable} ${greatVibes.variable} ${cormorant.variable} antialiased min-h-screen`}
       >
