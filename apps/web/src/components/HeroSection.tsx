@@ -105,8 +105,11 @@ export default function HeroSection() {
           <p className="font-[family-name:var(--font-serif)] text-sm tracking-[0.35em] text-gold-deep sm:text-base">
             &mdash; SOUNDS BY &mdash;
           </p>
-          <p className="font-[family-name:var(--font-script)] text-5xl text-ink sm:text-6xl">
-            DJ Geovoni
+          <p className="text-5xl text-ink sm:text-6xl">
+            <span className="mr-3 align-middle font-[family-name:var(--font-serif)] text-4xl font-bold sm:text-5xl">
+              DJ
+            </span>
+            <span className="font-[family-name:var(--font-script)]">Geovoni</span>
           </p>
           <p className="font-[family-name:var(--font-serif)] text-base tracking-[0.25em] text-ink-soft sm:text-lg">
             R&amp;B &bull; SOCA &amp; FEEL-GOOD FAVORITES
